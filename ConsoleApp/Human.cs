@@ -6,7 +6,18 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    class Human
+    public class Human
     {
+        public string FirstName { set; get; }
+        public string LastName { set; get; }
+        public DateTime DateOfBirth { set; get; }
+
+        public Human(string firstname, string lastname, DateTime dateTime)
+        {
+            LastName = lastname;
+            FirstName = firstname;
+            DateOfBirth = dateTime;
+        }
     }
+
 }
