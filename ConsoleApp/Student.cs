@@ -19,6 +19,22 @@ namespace ConsoleApp
             Faculty = faculty;
             NameUnivercity = nameunivercity;
         }
+        public void GetStud()
+        {
+            Console.WriteLine($"Група {GetGroup()}, Курс : {GetCourse()}");
+        }
+        public int GetCourse()
+        {
+            return Course;
+        }
+        public int GetGroup()
+        {
+            return Course;
+        }
+        public int GetFaculty()
+        {
+            return Course;
+        }
     }
 
 }
