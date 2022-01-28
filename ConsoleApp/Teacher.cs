@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    class Teacher
+    public class Teacher : Student
     {
+        public string Position { set; get; }
+        public string Chair { set; get; }
+        public string NameOfUnivercity { set; get; }
+
+        public Teacher(string firstname, string lastname, DateTime dateOfBirth, int course, string group, string faculty, string nameunivercity,
+            string position, string chair, string nameofunivercity) : base(firstname, lastname, dateOfBirth, course, group, faculty, nameunivercity)
+        {
+            Position = position;
+            Chair = chair;
+            NameOfUnivercity = nameunivercity;
+        }
     }
+
 }
