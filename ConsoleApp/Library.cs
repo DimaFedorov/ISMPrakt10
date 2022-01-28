@@ -20,6 +20,18 @@ namespace ConsoleApp
             DateOfIssue = dateTime;
             MonthlyFee = monthlyfee;
         }
+        public void GetTeach()
+        {
+            Console.WriteLine($"Номер квитка :{GetReadersTicketNumber()}, Розмір щомісячного читацького внеску : {GetMonthlyFee()}");
+        }
+        public int GetReadersTicketNumber()
+        {
+            return ReadersTicketNumber;
+        }
+        public int GetMonthlyFee()
+        {
+            return MonthlyFee;
+        }
     }
 
 }
