@@ -19,6 +19,18 @@ namespace ConsoleApp
             Chair = chair;
             NameOfUnivercity = nameunivercity;
         }
+        public void GetTeach()
+        {
+            Console.WriteLine($"Посада :{GetPosition()}, Кафедра : {GetChair()}");
+        }
+        public string GetPosition()
+        {
+            return Position;
+        }
+        public string GetChair()
+        {
+            return Chair;
+        }
     }
 
 }
