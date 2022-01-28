@@ -18,6 +18,11 @@ namespace ConsoleApp
             FirstName = firstname;
             DateOfBirth = dateTime;
         }
+        public int GetAge()
+        {
+            TimeSpan age = DateTime.Now - DateOfBirth;
+            return (int)(age.TotalDays / 365);
+        }
     }
 
 }
