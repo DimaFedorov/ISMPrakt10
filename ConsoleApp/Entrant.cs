@@ -18,7 +18,12 @@ namespace ConsoleApp
             MarkForDocumentEducation = markfordocumenteducation;
             NameForEducationUniversity = nameforeducationuniversity;
         }
-       
+        public int GetMark()
+        {
+            int a = 0;
+            a = MarkForZNO + MarkForDocumentEducation;
+            return a;
+        }
     }
 
 }
