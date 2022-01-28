@@ -6,7 +6,19 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp
 {
-    class Entrant
+    public class Entrant : Human
     {
+        public int MarkForZNO { set; get; }
+        public int MarkForDocumentEducation { set; get; }
+        public string NameForEducationUniversity { set; get; }
+
+        public Entrant(string firstname, string lastname, DateTime dateOfBirth, int markforzno, int markfordocumenteducation, string nameforeducationuniversity) : base(firstname, lastname, dateOfBirth)
+        {
+            MarkForZNO = markforzno;
+            MarkForDocumentEducation = markfordocumenteducation;
+            NameForEducationUniversity = nameforeducationuniversity;
+        }
+       
     }
+
 }
