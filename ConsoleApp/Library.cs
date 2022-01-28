@@ -20,9 +20,9 @@ namespace ConsoleApp
             DateOfIssue = dateTime;
             MonthlyFee = monthlyfee;
         }
-        public void GetTeach()
+        public void GetLib()
         {
-            Console.WriteLine($"Номер квитка :{GetReadersTicketNumber()}, Розмір щомісячного читацького внеску : {GetMonthlyFee()}");
+            Console.WriteLine($"Номер квитка :{GetReadersTicketNumber()}\nРозмір щомісячного читацького внеску : {GetMonthlyFee()}");
         }
         public int GetReadersTicketNumber()
         {

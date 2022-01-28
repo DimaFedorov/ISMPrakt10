@@ -21,7 +21,7 @@ namespace ConsoleApp
         }
         public void GetTeach()
         {
-            Console.WriteLine($"Посада :{GetPosition()}, Кафедра : {GetChair()}");
+            Console.WriteLine($"Посада: {GetPosition()}\nКафедра: {GetChair()}");
         }
         public string GetPosition()
         {

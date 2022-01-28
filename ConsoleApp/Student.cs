@@ -27,14 +27,11 @@ namespace ConsoleApp
         {
             return Course;
         }
-        public int GetGroup()
+        public string GetGroup()
         {
-            return Course;
+            return Group;
         }
-        public int GetFaculty()
-        {
-            return Course;
-        }
+    
     }
 
 }
